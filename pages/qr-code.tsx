@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function QrCodePage() {
   return (
     <main
-      className="min-h-screen bg-gradient-to-t from-blue-300 to-blue-100 grid place-content-center
+      className="grid min-h-screen place-content-center bg-gradient-to-t from-blue-300 to-blue-100
      "
     >
       <QrCard />
@@ -13,14 +13,14 @@ export default function QrCodePage() {
 
 function QrCard() {
   return (
-    <section className="bg-white rounded-xl w-80 grid place-content-center p-4 text-center gap-4">
+    <section className="grid w-80 place-content-center gap-4 rounded-xl bg-white p-4 text-center">
       <Image
         src={"/qr-code/image-qr-code.png"}
         width={300}
         height={300}
         className="rounded-xl"
       />
-      <div className="font-bold text-lg">
+      <div className="text-lg font-bold">
         Improve your frontend skills by building projects
       </div>
       <div className="text-gray-500">
